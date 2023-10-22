@@ -1,11 +1,12 @@
 import { login } from "../js/api/auth/login";
+import { localStorageMock } from "./localStorageMock.js";
 
-const localStorageMock = {
+/* const localStorageMock = {
   getItem: jest.fn(),
   setItem: jest.fn(),
   removeItem: jest.fn(),
   clear: jest.fn(),
-};
+}; */
 
 global.localStorage = localStorageMock;
 
